@@ -7,7 +7,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:TextBox ID="txtdate" runat="server" TextMode="Date"></asp:TextBox>
+        <asp:TextBox ID="txtsdate" runat="server" TextMode="Date"></asp:TextBox>
+        <asp:TextBox ID="txtedate" runat="server" TextMode="Date"></asp:TextBox>
         <asp:TextBox ID="txtfromtime" runat="server" TextMode="Time"></asp:TextBox>
         <asp:TextBox ID="txttotime" runat="server" TextMode="Time"></asp:TextBox>
         <asp:TextBox ID="txtpurpose" runat="server" TextMode="MultiLine"></asp:TextBox>
