@@ -1,0 +1,113 @@
+-> using namespace_name;
+eg. using System;
+
+->C#-follows the naming convention as (capitalize) i.e. first letter of every word is capital 
+
+Same as Java for main i.e. main is within class. Also can be written as
+psvm(). Here args are not necessary.Also public is also optional
+
+->Escape character '\'
+
+->Verbatim literal:(Used to enhance readability)
+@- in front of string removes all the meanings of escape characters within the string.
+@"C:\Users\Minions\Appdata";
+
+->Default value:
+Reference type-null
+Data type-0
+
+->Null Coalescing operator('??'):
+
+int a=b ??0;//Here int b is nullable type,while a is notSo if null assign default value followed by '??'i.e. 0 in our case
+
+->Explicit conversion:
+
+i)Type cast operator i.e. (int)f-It will not throw an overflow exception instead it will display the maximum or minimum no.
+ii)Convert class- i.e. Convert.ToDatatype eg. Convert.ToInt64 -Here it throws an unhandleld overflow exception.
+-Format Exception-eg. when parsing the string to int and string contains some alphabets
+
+->Functions can have arguments as-Data & Reference type,
+
+->Array
+syntax eg:int[] name=new name[size];(for dynamic initialization only)
+syntax eg:int[] scores = new int[] { 97, 92, 81, 60 }(for dynamic allocation and initiaization);
+syntax eg:int[] name={1,2,3};(for initialization and assignment)
+-Arrays perform bound checking i.e. throws System.IndexOutOfRangeException
+
+->XML documnetation comments
+///-it implicitly gives us <summary> tag where we can write documnetation for a class above the defintion of class which is visible when we hover over the class name elsewhere.
+
+[[
+->&& , ||-also called short circuit operator
+Here if first condition satisfies or not depending on operator it will check the 2nd if required.So considered slightly faster.
+
+->&,|
+It checks both the conditions irrelevant to whether it satisfies or unsatiesfies the conditions 
+]]
+
+->foreach(int k in Numbers)
+Here Numbers is an integer array.We don't have to worry about RangeOutOfBoundException
+The value of array is fetched into k i.e. for 1st iteration k=Numbers[0] and so on.
+
+->continue
+It skips the rest of the part after the statement and continues the loop again i.e. after skipping whwnever it is inside any loop.
+
+->Parameter array
+params has to be the last argument in parameters list.
+Only 1 params allowed.
+
+->Method Declaration-parameters
+->Method invoke-arguments
+
+->Access modifiers are not allowed in static constructors
+Static constructors used to initialize static fields,called only once.Always called before the instance constructors.
+
+->default modoifers private
+
+->Class members-fields,methods,properties,events,indexers,constructors
+
+->Property:It has get and set accessers
+syntax:
+access_modifier data_type property_name
+{
+	set
+	{ //logic for setting data}
+	get
+	{ //logic for retrieving the data}
+	//Depending on whether read/write =>both accessers
+	//if read only =>get accesser only and so on.
+	//Data type for the member that we want to use the property for.
+}
+eg.public int  Id
+{
+	set
+	{
+		//eg
+		id=value;
+	}
+	get{}
+}
+//Note:No paranthesis no arguments
+For invoking eg. Obj_name.property_name=value;
+//Now if on left hand side i.e. we want it to be our destination so set accessor is accessed
+//Default argument is called 'value', so whataver we send in set is sent to value variable
+
+->Lambda expression:
+=> (lambda) operator used.
+scope of parameter within the parenthesis
+
+->string_var.ToCharArray(),string_var.Length,string_var.ToUpper,string_var.ToLower,
+->((IsEmptyOrNull))-check
+
+->Extension method
+-first parameter should be the type that we want to extend
+
+->Main thread also called UI thread
+
+->In Multi Thread program we need to pass the method that we want the thread to execute.No need to have the parenthesis around function.
+eg. Thread t1 =new Thread(Numbers.printNumbers);
+//printNumbers is static method of Numbers class
+
+->null is written in lower case
+
+->

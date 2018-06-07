@@ -1,0 +1,39 @@
+ADO.NET:
+
+->.NET data providers-(namespaces to connect to various databases.)
+eg.-System.Data.SqlClient/OracleClient/OleDb/Odbc
+-They have common objects with prefix according to the data provider.
+-eg.SqlCommand,OracleConnection,OleDbDataReader,OdbcDataAdapter etc.
+(In short 4 objects i.e. Connection,Command,DataReader,DataAdapter with prefix as per data provider)
+
+->Oledb database - for msaccess,ms excel,
+
+->DataSet object does not belong to any data provider.It lies in System.Data class namespace
+itself.Thus it is not provider specific.
+
+->SqlConnection:
+eg.SqlConnection con=new SqlConnection();
+con.ConnectionString="data source=. ; database=Sample ; integrated security=SSPI";
+				or
+eg.SqlConnection con=new SqlConnection("data source=. ; database=Sample ; 
+integrated security=SSPI");
+-(The string passed here as argument is called 'connection string' which is key value pairs.It contains 'data source' for 'local server' it is '.','database' i.e. db within the server also called 'initial catalog' and 'user id','password' i.e. if SQl server authentication else use 'integrated security=SSPI' i.e for the windows authentication)
+
+->SqlData reader:
+-Object cannot be created with new keyword.(We get error that there is no constructor.)
+-gives runtime error if coonection is not opened before we may use ExecuteReader object.
+
+->DataSet is an in-memory representaton of our tables. 
+
+->While using DataAdapter object we do not require to open the connection.The Fill method 
+will do that for us.Fill method does each and every thing i.e. opening the connection,
+executing the command,fetching the result and storing it to DataSet and then closing the 
+connection.(Here first DataAdapter's object is created first and then the DataSet's empty 
+object is crated and then passed to Fill method as parameter.)
+
+->If we set DataSet as DataSource for GridView control then by default it uses the first
+table of the DataSet.
+
+->DataSet_object.Tables[].TableName=""; //For changing name of table from the DataSet .
+
+->

@@ -1,0 +1,10 @@
+ASP.NET:
+
+->ASP.NET runs under IIS(Microsoft Internet Information Servsices).
+
+->Listbox:
+-List box has SelectedItem property set to null and SelectedIndex property set to -1 when
+nothing is selected.So we supposed to check to avoid the exception.
+-In Multiple SelectionMode it will show the first selected item only.So we are supposed to 
+use a loop.
+
