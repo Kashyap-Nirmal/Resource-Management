@@ -72,9 +72,14 @@
                         <asp:Label ID="lblextension" runat="server" Text='<%# Eval("Extension") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Date">
+                <asp:TemplateField HeaderText="Start_Date">
                     <ItemTemplate>
-                        <asp:Label ID="lbldate" runat="server" Text='<%# Eval("Date") %>'></asp:Label>
+                        <asp:Label ID="lblsdate" runat="server" Text='<%# Eval("Date") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="End_Date">
+                    <ItemTemplate>
+                        <asp:Label ID="lbledate" runat="server" Text='<%# Eval("Date") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="From">
