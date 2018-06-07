@@ -28,7 +28,7 @@ public partial class Resource_Book : System.Web.UI.Page
             cn.Close();*/
             GridView1.DataSource = null;
             GridView1.DataBind();
-            SqlDataAdapter da_alloc = new SqlDataAdapter("select resource_id,allocation_s_time,allocation_e_time,allocation_date,purpose from Resource_Allocation where  room_type=" + int.Parse(DropDownList1.SelectedValue) + " and allocation_date='" + txtdate.Text + "' and NOT((allocation_s_time>='" + txttotime.Text + "') or (allocation_e_time<='" + txtfromtime.Text + "')) ", cn);
+            SqlDataAdapter da_alloc = new SqlDataAdapter("select resource_id,allocation_s_time,allocation_e_time,allocation_s_date,purpose from Resource_Allocation where  room_type=" + int.Parse(DropDownList1.SelectedValue) + " and allocation_s_date='" + txtdate.Text + "' and NOT((allocation_s_time>='" + txttotime.Text + "') or (allocation_e_time<='" + txtfromtime.Text + "')) ", cn);
             DataSet ds_alloc = new DataSet();
             da_alloc.Fill(ds_alloc);
             SqlDataAdapter da_rooms = new SqlDataAdapter("select Rooms.*,Resource_Details.*,Authorised_user.Name,Authorised_user.Department,Authorised_user.Extension from Rooms inner join Resource_Details on Rooms.building=Resource_Details.Id inner join Authorised_user on Rooms.authorised_user= Authorised_user.Id where Rooms.Type=" + int.Parse(DropDownList1.SelectedValue) + " ", cn);
@@ -79,7 +79,7 @@ public partial class Resource_Book : System.Web.UI.Page
         {
             GridView1.DataSource = null;
             GridView1.DataBind();
-            SqlDataAdapter da_alloc = new SqlDataAdapter("select resource_id,allocation_s_time,allocation_e_time,allocation_date,purpose from Resource_Allocation where resource_id=" + int.Parse(DropDownList2.SelectedValue.ToString()) + " and room_type=" + int.Parse(DropDownList1.SelectedValue) + " and allocation_date='" + txtdate.Text + "' and NOT((allocation_s_time>='" + txttotime.Text + "') or (allocation_e_time<='" + txtfromtime.Text + "')) ", cn);
+            SqlDataAdapter da_alloc = new SqlDataAdapter("select resource_id,allocation_s_time,allocation_e_time,allocation_s_date,purpose from Resource_Allocation where resource_id=" + int.Parse(DropDownList2.SelectedValue.ToString()) + " and room_type=" + int.Parse(DropDownList1.SelectedValue) + " and allocation_s_date='" + txtdate.Text + "' and NOT((allocation_s_time>='" + txttotime.Text + "') or (allocation_e_time<='" + txtfromtime.Text + "')) ", cn);
             DataSet ds_alloc = new DataSet();
             da_alloc.Fill(ds_alloc);
             SqlDataAdapter da_rooms = new SqlDataAdapter("select Rooms.*,Resource_Details.*,Authorised_user.Name,Authorised_user.Department,Authorised_user.Extension from Rooms inner join Resource_Details on Rooms.building=Resource_Details.Id inner join Authorised_user on Rooms.authorised_user= Authorised_user.Id where Rooms.Type=" + int.Parse(DropDownList1.SelectedValue) + " and Rooms.Id=" + int.Parse(DropDownList2.SelectedValue.ToString()) + " ", cn);
