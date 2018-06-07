@@ -1,7 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Resource_Book.aspx.cs" Inherits="Resource_Book" %>
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
@@ -12,12 +10,9 @@
         <asp:TextBox ID="txtdate" runat="server" TextMode="Date"></asp:TextBox>
         <asp:TextBox ID="txtfromtime" runat="server" TextMode="Time"></asp:TextBox>
         <asp:TextBox ID="txttotime" runat="server" TextMode="Time"></asp:TextBox>
-    
         <asp:TextBox ID="txtpurpose" runat="server" TextMode="MultiLine"></asp:TextBox>
-    
     </div>
         <div>
-
             <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="name" DataValueField="Id" AutoPostBack="True">
             </asp:DropDownList>
             <br />
@@ -33,7 +28,6 @@
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Room_Type]"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Resource_Details]"></asp:SqlDataSource>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Check Availability" />
-
         </div>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" OnRowCommand="GridView1_RowCommand" OnDataBound="GridView1_DataBound">
             <Columns>
@@ -49,7 +43,7 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Room No.">
                     <ItemTemplate>
-                        <asp:Label ID="lblroomno" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
+                        <asp:Label ID="lblroomno" runat="server" Text='<%# Eval("Room_no").ToString()+" "+Eval("Name").ToString() %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Building">
