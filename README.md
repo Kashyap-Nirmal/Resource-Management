@@ -36,7 +36,7 @@ Add Authorized User
 ![Add Authorized User](https://github.com/Kashyap-Nirmal/Resource-Management/blob/master/Snap/Authorised_user(popup).png)
 
 
-This project was initiated Prof. Kamlesh Makwana. I collobrated with him. I understood his existing work and had some of my additional modules.
+This project was initiated by Prof. Kamlesh Makwana. I collobrated with him. I understood his existing work and had some of my additional modules.
 
 May 2018- July 2018
 
