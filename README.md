@@ -1,5 +1,5 @@
 # Resource-Management
-For handling the request for the conducting various Workshops,Expert Talks etc.The requests for the resources of the institutes i.e. Seminar Halls,Conference room, Laboratories etc are handled through the Web Application i.e based on ASP.NET.
+Web Application based on ASP.NET for handling the resource request for conducting various Workshops, Expert Talks, Seminars etc. Where the resources of the institutes include, Seminar Halls, Conference room, Laboratories, etc.
 
 Snapshots :
 
