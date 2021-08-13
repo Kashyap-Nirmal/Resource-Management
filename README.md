@@ -1,6 +1,10 @@
 # Resource-Management
 Web Application based on ASP.NET for handling the resource request for conducting various Workshops, Expert Talks, Seminars etc. Where the resources of the institutes include, Seminar Halls, Conference room, Laboratories, etc.
 
+This project was initiated by Prof. Kamlesh Makwana. I collobrated with him. I understood his existing work and had some of my additional modules.
+
+May 2018- July 2018
+
 Snapshots :
 
 Login page
@@ -34,10 +38,3 @@ Add Rooms
 Add Authorized User
 
 ![Add Authorized User](https://github.com/Kashyap-Nirmal/Resource-Management/blob/master/Snap/Authorised_user(popup).png)
-
-
-This project was initiated by Prof. Kamlesh Makwana. I collobrated with him. I understood his existing work and had some of my additional modules.
-
-May 2018- July 2018
-
-
