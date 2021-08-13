@@ -1,7 +1,7 @@
 # Resource-Management
 -> Web Application based on ASP.NET for handling the resource request for conducting various Workshops, Expert Talks, Seminars etc. Where the resources of the institutes include, Seminar Halls, Conference room, Laboratories, etc.
 
--> This project was initiated by Prof. Kamlesh Makwana. I collobrated with him. I understood his existing work and had some of my additional modules.
+-> This project was initiated by [Prof. Kamlesh Makwana](https://github.com/kamlesh-it). I collobrated with him. I understood his existing work and had some of my additional modules.
 
 May 2018- July 2018
 
