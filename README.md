@@ -20,14 +20,15 @@
 ## Introduction
 
 - Web Application based on ***ASP.NET*** for handling the ***resource request for conducting various Workshops, Expert Talks, Seminars*** etc. Where the ***resources*** of the institutes ***include, Seminar Halls, Conference room, Laboratories***, etc.
-
-- This project was initiated by [Prof. Kamlesh Makwana](https://github.com/kamlesh-it). I collobrated with him. I understood his existing work and I had some of my additional modules.
+- This project was initiated by [Prof. Kamlesh Makwana](https://github.com/kamlesh-it). I collobrated with him. 
+- I understood his existing work and I had added some of my additional modules.
+- [Report](./Report/Resource%20Management%Report.pdf) that I made while learning the technology required.
+- These are my [Notes](https://github.com/Kashyap-Nirmal/Resource-Management/tree/master/Notes) that I made while learning the technology required.
 
 Duration `May 2018- July 2018`
 
 ## `📋 Table of Functionalities 📋`
 
-<!--||[]()| [C++]()|Easy|-->
 | Title |
 |---|
 |Login / Logout. Authorized access based on type of user.|
