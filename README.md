@@ -38,6 +38,7 @@ Duration `May 2018- July 2018`
 |Search for availability of the resource.|
 |Add room. i.e. Seminar hall, laboratory etc.|
 |Add Authorized User.|
+|Automated email is sent after confirmation of the request.|
 
 # Snapshots 
 
