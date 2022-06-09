@@ -12,7 +12,7 @@
 ## Technology stack
 - ASP.NET
 - C#
-- ADO.NET
+- SQL Server
 
 ## Tool used
 - Visual Studio
@@ -20,7 +20,7 @@
 ## Introduction
 
 - Web Application based on ***ASP.NET*** for handling the ***resource request for conducting various Workshops, Expert Talks, Seminars*** etc. Where the ***resources*** of the institutes ***include, Seminar Halls, Conference room, Laboratories***, etc.
-- This project was initiated by [Prof. Kamlesh Makwana](https://github.com/kamlesh-it). I collobrated with him. 
+- This project was initiated by [Prof. Kamlesh Makvana](https://github.com/kamlesh-it). I collaborated with him. 
 - I understood his existing work and I had added some of my additional modules.
 - This is the [Report](./Report/Resource%20Management%20report.pdf) of the project.
 - These are my [Notes](https://github.com/Kashyap-Nirmal/Resource-Management/tree/master/Notes) that I made while learning the technology required.
